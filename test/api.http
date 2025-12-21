@@ -1,0 +1,110 @@
+###
+GET http://localhost:3000/api/users
+###
+GET http://localhost:3000/api/roles
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "John Wick",
+    "email": "John@Wick.com"
+}
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "John Wick",
+    "email": "John@Wick",
+    "phone": "120"
+}
+###
+POST http://localhost:3000/api/product
+Content-Type: application/json
+
+{
+    "id": 12345,
+    "productname": "ttttt",
+    "price": 12.50,
+    "cost": 10.25,
+    "note": "555555"
+}
+###
+POST http://localhost:3000/api/product
+Content-Type: application/json
+
+{
+    "id": "123456",
+    "productname": "tttt",
+    "price": "12",
+    "cost": "10",
+    "note": ""
+}
+###
+GET http://localhost:3000/api/users
+###
+GET http://localhost:3000/api/users/1
+###
+GET http://localhost:3000/api/users/999
+###
+//สร้าง users ใหม่ที่ถูก
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username" : "user03" ,
+    "password" : "user1234",
+    "firstname": "user01firstname",
+    "lastname": "user01lastname"
+}
+###
+//สร้าง users ที่ผิด
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "password" : "user1234",
+    "firstname": "user01firstname",
+    "lastname": "user01lastname"
+}
+###
+PUT http://localhost:3000/api/users/9
+
+{
+    "username": "user0",
+    "password" : "4512222",
+    "firstname": "",
+    "lastname": ""
+}
+###
+DELETE http://localhost:3000/api/users/9
+###
+GET http://localhost:3000/api/roles
+###
+GET http://localhost:3000/api/roles/1
+###
+GET http://localhost:3000/api/roles/999
+###
+POST http://localhost:3000/api/roles
+Content-Type: application/json
+
+{
+    "name" : "admin"
+}
+###
+POST http://localhost:3000/api/roles
+Content-Type: application/json
+
+{
+    "name" : "09"
+}
+###
+PUT http://localhost:3000/api/roles/2
+
+{
+    "name" : "admin krub"
+}
+###
+DELETE http://localhost:3000/api/roles/2
+###
