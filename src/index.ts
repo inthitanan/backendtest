@@ -1,16 +1,14 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
-import userRoutes from './users/index.js'
-import roleRoutes from './roles/index.js'
-import productRoutes from './product/index.js'
+import invoiceRoutes from "./invoice/index.js"
 
-import db from './db/index.js'
+
+//import db from './db/index.js'
 
 const app = new Hono()
 
-app.route('/api/users',userRoutes)
-app.route('/api/roles',roleRoutes)
-app.route('/api/product', productRoutes)
+app.route('/api/invoice',invoiceRoutes)
+
 
 
 serve({

@@ -108,3 +108,15 @@ PUT http://localhost:3000/api/roles/2
 ###
 DELETE http://localhost:3000/api/roles/2
 ###
+GET http://localhost:3000/api/invoice
+###
+POST http://localhost:3000/api/invoice
+Content-Type: application/json
+
+{
+  "InvoiceDate": "2026-01-17",
+  "Amount": 1000,
+  "Status": "Yes",
+  "DueDate": "2026-01-18"
+}
+###
